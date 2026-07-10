@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+<!--welcome screen-->
   <div style="border: solid; width: 800px; border-radius: 8px; padding: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color:#a3bffe;">
     <body style="background-color: #a3bffe; font-family: Segoe UI, Tahoma, Calibri; background-image: url(./Blur_Platform\ \(1\).png); background-size: cover;">
       <h1 style="margin: 4px; padding: 6px;">Welcome to Synchron OS!</h1>
@@ -12,16 +13,28 @@
       <h2 style="margin:10px">Why are we making a WebOS?</h2>
       <p style="margin:10px"><s>We believe that the current state of web-based operating systems is not good enough. We want to create a better web experience for everyone.</s></p>
       <p style="margin:10px"><strong>Nah we just wanted to do something different for Stardance XD</strong></p>
+
+<!--update time-->
+      <script>
+        function timeUpdater() {
+          var timeNow = new Date().toLocaleString();
+          var timeText = document.querySelector("#timeElement");
+          timeText.innerHTML = timeNow;
+        }
+
+        setInterval(timeUpdater, 1000);
+      </script>
     </body>
   </div>
-  
-  <div style="position: absolute; left: 5px; right: 5px; display: flex; justify-content: space-between; align-items: flex-start; background-color: rgba(255, 255, 255, 0.75);">
-    <p>
+
+<!--top bar-->
+  <div style="position: absolute; left: 1px; right: 1px; top: 1px; display: flex; justify-content: space-between; align-items: flex-start; background-color: rgba(255, 255, 255, 1); border-radius: 3px;">
+    <p style="margin: 1px; padding: 1px;">
       <strong>SynchronOS</strong>
     </p>
 
-    <p>
-      8/07/2026 5:37 PM
+    <p id="timeElement" style="margin: 1px; padding: 1px;">
+      Time
     </p>
   </div>
 
