@@ -2,7 +2,10 @@
 <html>
 
 <!--welcome screen-->
-  <div style="border: solid; width: 800px; border-radius: 8px; padding: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color:#a3bffe;">
+  <div id="welcome" style="border: solid; width: 800px; border-radius: 8px; padding: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color:#a3bffe;">
+    <p id="welcomeheader">
+      Handle
+    </p>
     <body style="background-color: #a3bffe; font-family: Segoe UI, Tahoma, Calibri; background-image: url(./Blur_Platform\ \(1\).png); background-size: cover;">
       <h1 style="margin: 4px; padding: 6px;">Welcome to Synchron OS!</h1>
       <img src="friend.jpg" alt="Friend" style="margin: 10px;max-width: 25%; height: auto; border-radius: 8px;">
@@ -15,15 +18,7 @@
       <p style="margin:10px"><strong>Nah we just wanted to do something different for Stardance XD</strong></p>
 
 <!--update time-->
-      <script>
-        function timeUpdater() {
-          var timeNow = new Date().toLocaleString();
-          var timeText = document.querySelector("#timeElement");
-          timeText.innerHTML = timeNow;
-        }
-
-        setInterval(timeUpdater, 1000);
-      </script>
+      <script src="script.js"></script>
     </body>
   </div>
 
