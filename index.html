@@ -2,10 +2,11 @@
 <html>
 
 <!--welcome screen-->
-  <div id="welcome" style="border: solid; width: 800px; border-radius: 8px; padding: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color:#a3bffe;">
-    <p id="welcomeheader">
-      Handle
-    </p>
+  <div id="welcome" style="border: solid; width: 800px; border-radius: 8px; padding: 10px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color:#a3bffe;">
+    <div id="welcomeheader" style="border: solid; margin: -10px -10px -10px -10px; width:auto; height: 20px; border-width: 0 0 medium 0; display: flex; gap: 20px;">
+      <p style="cursor: pointer; margin: 0px 0px 0px 0px;" id="welcomeclose">CloseSync</p>
+      <p style="cursor: pointer; margin: 0px 0px 0px 0px;" id="welcomeopen">OpenSync</p>
+    </div>
     <body style="background-color: #a3bffe; font-family: Segoe UI, Tahoma, Calibri; background-image: url(./Blur_Platform\ \(1\).png); background-size: cover;">
       <h1 style="margin: 4px; padding: 6px;">Welcome to Synchron OS!</h1>
       <img src="friend.jpg" alt="Friend" style="margin: 10px;max-width: 25%; height: auto; border-radius: 8px;">
@@ -23,12 +24,12 @@
   </div>
 
 <!--top bar-->
-  <div style="position: absolute; left: 1px; right: 1px; top: 1px; display: flex; justify-content: space-between; align-items: flex-start; background-color: rgba(255, 255, 255, 1); border-radius: 3px;">
-    <p style="margin: 1px; padding: 1px;">
+  <div style="position: absolute; left: 3px; right: 3px; top: 3px; display: flex; justify-content: space-between; align-items: flex-start; background-color: rgba(255, 255, 255, 1); border-radius: 4px;">
+    <p style="margin: 1px; padding: 2px;">
       <strong>SynchronOS</strong>
     </p>
 
-    <p id="timeElement" style="margin: 1px; padding: 1px;">
+    <p id="timeElement" style="margin: 1px; padding: 2px;">
       Time
     </p>
   </div>
